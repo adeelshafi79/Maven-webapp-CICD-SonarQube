@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: adeelshafi79/maven-sonar-cicd-webapp:5
+        image: abhishekf5/ultimate-cicd:5
         ports:
         - containerPort: 8080
