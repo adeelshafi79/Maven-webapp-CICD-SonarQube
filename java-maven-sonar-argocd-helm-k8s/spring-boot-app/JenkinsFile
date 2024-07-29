@@ -56,18 +56,19 @@ pipeline {
             git config user.name "adeelshafi79"
             git clean -fd
             git fetch origin
-            git checkout -B main origin/main                    
+            git checkout -B main origin/main
+
             BUILD_NUMBER=${BUILD_NUMBER}
             FILE_PATH="java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml"
-            
+
             echo "Before sed command:"
             cat $FILE_PATH
-            
-            sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" $FILE_PATH
-            
+
+            sed -i "s#adeelshafi79/maven-sonar-cicd-webapp:BUILD_NUMBER#adeelshafi79/maven-sonar-cicd-webapp:${BUILD_NUMBER}#g" $FILE_PATH
+
             echo "After sed command:"
             cat $FILE_PATH
-            
+
             git add $FILE_PATH
             git commit -m "Update deployment image to version ${BUILD_NUMBER}"
             git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
