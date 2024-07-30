@@ -78,6 +78,11 @@ This end-to-end Jenkins pipeline will automate the entire CI/CD process for a Ja
 
 ![ArgoCD](https://github.com/adeelshafi79/Maven-webapp-CICD-SonarQube/raw/main/argoCD.png)
 
+## Kubernetes Cluster
+
+![Kubernetes](https://github.com/adeelshafi79/Maven-webapp-CICD-SonarQube/raw/main/kubernetes.png)
+
+
 ## More Information
 
 For more details, check out the [repository](https://github.com/adeelshafi79/Maven-webapp-CICD-SonarQube).
