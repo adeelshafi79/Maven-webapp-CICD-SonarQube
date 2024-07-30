@@ -60,3 +60,25 @@ Steps:
        7.2 Monitor the pipeline stages and fix any issues that arise.
 
 This end-to-end Jenkins pipeline will automate the entire CI/CD process for a Java application, from code checkout to production deployment, using popular tools like SonarQube, Argo CD, Helm, and Kubernetes.
+
+# Results: Maven Webapp CI/CD with SonarQube
+
+## SonarQube Test Results:
+![SonarQube Logo](https://github.com/adeelshafi79/Maven-webapp-CICD-SonarQube/raw/main/sonar.png)
+
+## Jenkins CI Pipeline
+
+![Jenkins CI Pipeline](https://github.com/adeelshafi79/Maven-webapp-CICD-SonarQube/raw/main/jenkins-CI-pipeline.png)
+
+## DockerHub Image
+
+![DockerHub Image](https://github.com/adeelshafi79/Maven-webapp-CICD-SonarQube/raw/main/dockerhub-image.png)
+
+## ArgoCD
+
+![ArgoCD](https://github.com/adeelshafi79/Maven-webapp-CICD-SonarQube/raw/main/argoCD.png)
+
+## More Information
+
+For more details, check out the [repository](https://github.com/adeelshafi79/Maven-webapp-CICD-SonarQube).
+
